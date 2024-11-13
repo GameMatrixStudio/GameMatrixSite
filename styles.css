@@ -1,1 +1,97 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Стили для секций */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#games .game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.game-card h3 {
+    color: #f9c74f;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Анимации */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
