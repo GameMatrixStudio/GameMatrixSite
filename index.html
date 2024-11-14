@@ -3,38 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperGame - Главная</title>
+    <title>Game Matrix</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Приветственный блок -->
-    <header class="hero">
-        <h1>Добро пожаловать в мир SuperGame</h1>
-        <p>Новые игры, свежие идеи, незабываемые впечатления</p>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Game Matrix</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#games">Игры</a></li>
+                <li><a href="#careers">Карьера</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
 
-    <!-- Новости с каруселью -->
-    <section class="news">
-        <h2>Новости и обновления</h2>
-        <div class="carousel-container">
-            <button class="carousel-button left" onclick="scrollCarousel(-1)">&#10094;</button>
-            <div class="news-carousel">
-                <div class="news-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
-                    <p>Новое видео о разработке нашей игры!</p>
-                </div>
-                <div class="news-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
-                    <p>Секреты создания персонажей!</p>
-                </div>
-                <div class="news-item">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID3" allowfullscreen></iframe>
-                    <p>Обновление уже здесь – посмотрите, что нового!</p>
-                </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Добро пожаловать в Game Matrix</h1>
+        <p>Лучшие игры, созданные для игроков по всему миру!</p>
+        <button onclick="window.location.href='#games'">Посмотреть игры</button>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <h2>Новости и Обновления</h2>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="news1.jpg" alt="Новость 1">
+                <h3>Запуск новой функции в Cyber Strike</h3>
+                <p>Оцените наши последние обновления!</p>
+                <button>Узнать больше</button>
             </div>
-            <button class="carousel-button right" onclick="scrollCarousel(1)">&#10095;</button>
+            <div class="news-card">
+                <img src="news2.jpg" alt="Новость 2">
+                <h3>Турнир в Fury Race</h3>
+                <p>Участвуйте в нашем новом турнире!</p>
+                <button>Узнать больше</button>
+            </div>
         </div>
     </section>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2>Наши Игры</h2>
+        <div class="game-cards">
+            <div class="game-card">
+                <img src="game1.jpg" alt="Игра 1">
+                <h3>Cyber Strike</h3>
+                <p>Многопользовательский шутер, где каждое решение важно.</p>
+                <button>Играть сейчас</button>
+            </div>
+            <div class="game-card">
+                <img src="game2.jpg" alt="Игра 2">
+                <h3>Fury Race</h3>
+                <p>Погоняй на суперскорости с друзьями и врагами!</p>
+                <button>Играть сейчас</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers">
+        <h2>Карьера</h2>
+        <p>Присоединяйтесь к нам, чтобы создавать игры для миллионов игроков.</p>
+        <button onclick="window.location.href='#'">Посмотреть вакансии</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="#">VK</a>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+        </div>
+        <p>© 2024 Game Matrix. Все права защищены.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
