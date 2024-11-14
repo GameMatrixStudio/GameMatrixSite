@@ -3,64 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Matrix</title>
+    <title>Game Matrix - Главная</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Навигационная панель -->
-    <nav>
-        <div class="logo">
-            <img src="GameMatrix.png" alt="Game Matrix Logo" class="logo-image">
-            <h1>Game Matrix</h1>
-        </div>
-        <ul>
-            <li><a href="#games">Игры</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <!-- Главный баннер -->
-    <header>
-        <div class="header-content">
-            <h2>Добро пожаловать в мир <span class="highlight">Game Matrix</span></h2>
-            <p>Создаем уникальные игры, чтобы вдохновлять и удивлять!</p>
-            <a href="#games" class="button">Наши Игры</a>
-        </div>
+    <!-- Приветственный блок -->
+    <header class="hero">
+        <h1>Добро пожаловать в мир Game Matrix</h1>
+        <p>Новые игры, свежие идеи, незабываемые впечатления</p>
     </header>
 
-    <!-- Секция с играми -->
-    <section id="games" class="section">
-        <h2>Наши Игры</h2>
-        <div class="game-list">
-            <div class="game-card">
-                <h3>Игра 1</h3>
-                <p>Описание игры 1.</p>
+    <!-- Новости -->
+    <section class="news">
+        <h2>Новости и обновления</h2>
+        <div class="news-carousel">
+            <div class="news-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+                <p>Новое видео о разработке нашей игры!</p>
             </div>
-            <div class="game-card">
-                <h3>Игра 2</h3>
-                <p>Описание игры 2.</p>
+            <div class="news-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+                <p>Секреты создания персонажей!</p>
+            </div>
+            <div class="news-item">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID3" allowfullscreen></iframe>
+                <p>Обновление уже здесь – посмотрите, что нового!</p>
             </div>
         </div>
     </section>
-
-    <!-- Секция "О нас" -->
-    <section id="about" class="section">
-        <h2>О нас</h2>
-        <h6>Мы — команда Game Matrix, которая ставит качество и инновации в основу каждого проекта. Наша цель — создавать игры, которые остаются в памяти и приносят радость игрокам.</h6>
-    </section>
-
-    <!-- Секция с контактами -->
-    <section id="contact" class="section">
-        <h2>Контакты</h2>
-        <p>Свяжитесь с нами по электронной почте: info@gamematrix.com</p>
-        <p>Следите за нами в соцсетях!</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Game Matrix. Все права защищены.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
