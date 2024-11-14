@@ -1,21 +1,10 @@
-// Анимация появления секций при скролле
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".section");
+// script.js
+function scrollCarousel(direction) {
+    const carousel = document.querySelector('.news-carousel');
+    const scrollAmount = 320; // Ширина одного элемента + отступы
 
-    const showSection = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(showSection, {
-        threshold: 0.1
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
     });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
-
+}
