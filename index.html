@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Matrix - Главная</title>
+    <title>SuperGame - Главная</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Приветственный блок -->
     <header class="hero">
-        <h1>Добро пожаловать в мир Game Matrix</h1>
+        <h1>Добро пожаловать в мир SuperGame</h1>
         <p>Новые игры, свежие идеи, незабываемые впечатления</p>
     </header>
 
-    <!-- Новости -->
+    <!-- Новости с каруселью -->
     <section class="news">
         <h2>Новости и обновления</h2>
-        <div class="news-carousel">
-            <div class="news-item">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
-                <p>Новое видео о разработке нашей игры!</p>
+        <div class="carousel-container">
+            <button class="carousel-button left" onclick="scrollCarousel(-1)">&#10094;</button>
+            <div class="news-carousel">
+                <div class="news-item">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+                    <p>Новое видео о разработке нашей игры!</p>
+                </div>
+                <div class="news-item">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+                    <p>Секреты создания персонажей!</p>
+                </div>
+                <div class="news-item">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID3" allowfullscreen></iframe>
+                    <p>Обновление уже здесь – посмотрите, что нового!</p>
+                </div>
             </div>
-            <div class="news-item">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
-                <p>Секреты создания персонажей!</p>
-            </div>
-            <div class="news-item">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID3" allowfullscreen></iframe>
-                <p>Обновление уже здесь – посмотрите, что нового!</p>
-            </div>
+            <button class="carousel-button right" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
     </section>
 
